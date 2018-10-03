@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :students
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root 'articles#index'
+  root 'pages#home'
   get 'pages/about', to: 'pages#about'
 
   resources :articles

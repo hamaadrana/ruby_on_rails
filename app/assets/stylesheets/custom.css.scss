@@ -1,2 +1,11 @@
-@import "bootstrap-sprockets";
+.navbar-light {
+  background-color: #79bcff !important;
+}
+#siteName{
+  color: white;
+  font-weight: 800;
+}
+#topMargin{
+  margin-top: 5%;
+}
 @import "bootstrap";

@@ -21,8 +21,23 @@
 </head>
 <body>
 
-<h2>Let's learn ruby!</h2>
+<div class="container">
 
-<%= link_to 'About', pages_about_path %>
+
+<div class="jumbotron">
+  <h1 class="display-4">Let's learn ruby!</h1>
+  <hr>
+<p>
+  <%= link_to 'About', pages_about_path , class: "btn btn-primary btn-lg" %>
+  <%= link_to 'Articles', articles_path, class: "btn btn-primary btn-lg" %>
+</p>
+</div>
+
+</div>
+
+
+
+
+
 </body>
 </html>
