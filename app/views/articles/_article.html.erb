@@ -1,0 +1,37 @@
+<div class="justify-content-md-center">
+
+
+  <% obj.each do |article| %>
+
+      <div class="row">
+        <div class="col-md-12">
+
+
+
+
+          <div class="alert alert-dark" role="alert">
+            <%= article.title  %>
+            <div class="alert alert-warning" role="alert">
+              <%= article.description %>
+              <hr>
+              <p>
+                Created by:
+                <%= article.user.username if article.user%>
+                Created:
+                <%= time_ago_in_words(article.created_at)%> ago
+              </p>
+            </div>
+
+            <%= link_to "Edit", edit_article_path(article) , class: "btn btn-primary"%>
+            <%= link_to "Show", article_path(article) , class: "btn btn-success"%>
+            <%= link_to "Delete", article_path(article), method: :delete, data: {confirm: "Are you sure you want to delete?"},class: "btn btn-danger" %>
+          </div>
+
+        </div>
+      </div>
+      <br>
+
+
+  <% end %>
+
+</div>

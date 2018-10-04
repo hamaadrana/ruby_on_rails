@@ -1,0 +1,22 @@
+
+<h1 align="center" id="topMargin"> Welcome to <%= @user.username %>'s Page</h1>
+<div class="row">
+  <div class="col-md-4 col-md-offset-4 center">
+
+    <div style="margin-left: 150%; width: 150%"><%= gravatar_for @user %></div>
+    <br>
+   <h3 style="margin-left: 120%; width: 150%"><%= @user.username %>'s Articles</h3>
+
+
+  </div>
+
+
+
+
+
+
+
+</div>
+<%= render 'articles/article', obj: @user.articles %>
+  </div>
+

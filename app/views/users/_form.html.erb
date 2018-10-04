@@ -1,0 +1,74 @@
+<div class="row justify-content-md-center">
+
+  <%  if @user.errors.any? %>
+      <div class="alert alert-danger" role="alert">
+
+
+        <%=  pluralize(@article.errors.count,"error")%>
+        Errors, can't perform action:
+
+        <ul >
+          <%  @article.errors.full_messages.each do |msg| %>
+
+              <li><%= msg %></li>
+
+          <% end %>
+        </ul>
+
+
+
+
+
+
+
+
+      </div>
+
+  <% end %>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="row justify-content-md-center">
+
+  <%= form_for @user do |a| %>
+
+      <div class="form-row">
+
+
+        <div class="form-group col-md-12">
+          <%= a.label :username  %>
+          <%= a.text_field :username , class: "form-control" %>
+
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <%= a.label :email %>
+          <%= a.text_field :email , class: "form-control" %>
+
+        </div>
+
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <%= a.label :password %>
+          <%= a.password_field :password , class: "form-control" %>
+
+        </div>
+
+      </div>
+
+      <%= a.submit  class: "btn btn-primary" %>
+
+
+  <% end %>
+</div>
