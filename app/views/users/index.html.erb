@@ -1,0 +1,29 @@
+<h1 style="text-align: center" id="topMargin">Users</h1>
+
+<div class="justify-content-md-center">
+
+
+  <% @users.each do |user| %>
+
+      <div class="row">
+        <div class="col-md-12">
+
+
+
+<%= link_to user_path(user) do %>
+          <div class="alert alert-dark" role="alert">
+            <%= user.username  %>
+          <span style="margin-left: 90%"><%= gravatar_for user%></span>
+            <hr>
+
+
+     </div>
+         <% end %>
+
+        </div>
+      </div>
+
+
+  <% end %>
+
+</div>

@@ -12,6 +12,10 @@ gem 'rails', '~> 5.1.4'
 
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'will_paginate', '3.1.5'
+
+
+gem 'will_paginate-bootstrap'
 #gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
