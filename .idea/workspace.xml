@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6961908c-46a5-468c-ac74-8e95fcc2f7a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/app.iml" afterPath="$PROJECT_DIR$/.idea/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-    </list>
+    <list default="true" id="6961908c-46a5-468c-ac74-8e95fcc2f7a1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -684,12 +678,12 @@
       <updated>1538471156700</updated>
       <workItem from="1538471160323" duration="10850000" />
       <workItem from="1538549296224" duration="18197000" />
-      <workItem from="1538633059479" duration="3216000" />
+      <workItem from="1538633059479" duration="3617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32263000" />
+    <option name="totallyTimeSpent" value="32664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="697" extended-state="6" />
