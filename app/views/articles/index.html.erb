@@ -21,6 +21,13 @@
         <%= article.title  %>
         <div class="alert alert-warning" role="alert">
           <%= article.description %>
+          <hr>
+          <p>
+            Created by:
+            <%= article.user.username if article.user%>
+            Created:
+            <%= time_ago_in_words(article.created_at)%> ago
+          </p>
         </div>
 
         <%= link_to "Edit", edit_article_path(article) , class: "btn btn-primary"%>

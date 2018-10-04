@@ -9,6 +9,9 @@ end
 gem 'bootstrap', '~> 4.1.3'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
+
+gem 'bcrypt', '~> 3.1.7'
+
 #gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
