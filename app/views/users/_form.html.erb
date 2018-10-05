@@ -4,11 +4,11 @@
       <div class="alert alert-danger" role="alert">
 
 
-        <%=  pluralize(@article.errors.count,"error")%>
+        <%=  pluralize(@user.errors.count,"error")%>
         Errors, can't perform action:
 
         <ul >
-          <%  @article.errors.full_messages.each do |msg| %>
+          <%  @user.errors.full_messages.each do |msg| %>
 
               <li><%= msg %></li>
 

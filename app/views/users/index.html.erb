@@ -8,22 +8,58 @@
       <div class="row">
         <div class="col-md-12">
 
+    <% if logged_in? %>
 
 
-<%= link_to user_path(user) do %>
-          <div class="alert alert-dark" role="alert">
-            <%= user.username  %>
-          <span style="margin-left: 90%"><%= gravatar_for user%></span>
-            <hr>
+              <% if user.email === current_user.email %>
 
 
-     </div>
-         <% end %>
+                  <%= link_to user_path(user) do %>
+
+                      <div class="alert alert-dark" role="alert">
+                        <%= user.username  %>
+                        <span style="margin-left: 90%"><%= gravatar_for user%></span>
+                        <hr>
+
+
+                      </div>
+                  <% end %>
+              <% else %>
+
+                  <div class="alert alert-dark" role="alert">
+                    <%= user.username  %>
+                    <span style="margin-left: 90%"><%= gravatar_for user%></span>
+                    <hr>
+
+
+                  </div>
+
+              <% end %>
+
+          <% else %>
+              <div class="alert alert-dark" role="alert">
+                <%= user.username  %>
+                <span style="margin-left: 90%"><%= gravatar_for user%></span>
+                <hr>
+
+
+              </div>
+
+          <% end %>
+
+
+
+
+
+
+
+
+
 
         </div>
       </div>
 
 
-  <% end %>
+      <% end %>
 
 </div>

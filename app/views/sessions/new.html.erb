@@ -1,0 +1,33 @@
+
+<div class="row justify-content-md-center" id="topMargin">
+  <h1>Login</h1>
+</div>
+
+<div class="row justify-content-md-center">
+
+  <%= form_for :session do |a| %>
+
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <%= a.label :email %>
+          <%= a.text_field :email , class: "form-control" %>
+
+        </div>
+
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <%= a.label :password %>
+          <%= a.password_field :password , class: "form-control" %>
+
+        </div>
+
+      </div>
+
+      <%= a.submit  class: "btn btn-primary" %>
+
+
+  <% end %>
+</div>

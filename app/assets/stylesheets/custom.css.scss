@@ -1,5 +1,6 @@
+
 .navbar-light {
-  background-color: #79bcff !important;
+  background-color: darkslategrey !important;
 }
 #siteName{
   color: white;
@@ -8,4 +9,10 @@
 #topMargin{
   margin-top: 5%;
 }
+
 @import "bootstrap";
+
+.nav-link {
+
+  color: white  !important;
+}
